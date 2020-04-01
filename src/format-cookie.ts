@@ -3,7 +3,8 @@ import { CookieOptions } from './cookie-options';
 const getSameSiteValue = (o: CookieOptions): string | null => {
   const { sameSite } = o;
   if (typeof sameSite === 'undefined') return null;
-  if (['lax', 'strict', 'none'].indexOf(sameSite.toLowerCase()) >= 0) return sameSite;
+  if (['lax', 'strict', 'none'].indexOf(sameSite.toLowerCase()) >= 0)
+    return sameSite;
   return null;
 };
 
