@@ -1,12 +1,8 @@
 {
-  "name": "cookie-storage",
+  "name": "@hvician/cookie-storage",
   "description": "A Web Storage interface for Cookie",
   "version": "6.0.0",
-  "author": {
-    "name": "bouzuya",
-    "email": "m@bouzuya.net",
-    "url": "http://bouzuya.net"
-  },
+  "author": "bouzuya <m@bouzuya.net> (http://bouzuya.net)",
   "babel": {
     "presets": [
       [
@@ -59,7 +55,7 @@
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bouzuya/cookie-storage.git"
+    "url": "git+https://github.com/bouzuya/cookie-storage.git"
   },
   "scripts": {
     "build": "npm-run-all -s build:format build:lint build:ts build:es2015 build:lib",
@@ -77,5 +73,10 @@
     "watch:test": "watch --wait 2 \"npm test\" \".tmp/es5/\"",
     "watch:ts": "npm run \"build:ts\" -- --watch"
   },
-  "typings": "./lib/index.d.ts"
+  "typings": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {}
 }
